@@ -1,0 +1,60 @@
+/* css variable */
+
+:root{
+    /* new thing I encountered */
+    --primary : crimson;
+    --dark : #1F2937;
+    --darkest : #111827;
+    --light : #f3f4f6;
+}
+
+
+*{
+    margin : 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+body{
+    background-color : var(--dark);
+    color: var(--light);
+}
+
+.watch{
+    text-align: center;
+    background-color: var(--darkest);
+    width: 100%;
+    max-width: 360px;
+    margin: 15rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.time{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button{
+    cursor: pointer;
+    color: var(--light);
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+}
+
+button:hover{
+    opacity: 0.6;
+    background-color: var(--dark);
+}
